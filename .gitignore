@@ -7,3 +7,5 @@ data/*_backup.csv
 .env
 .env.*
 results/benchmarking/
+data/bank-full.csv
+*.zip
