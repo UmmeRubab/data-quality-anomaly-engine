@@ -6,3 +6,4 @@ src_backup/
 data/*_backup.csv
 .env
 .env.*
+results/benchmarking/
