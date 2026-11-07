@@ -1,0 +1,11 @@
+﻿.venv/
+__pycache__/
+*.pyc
+.vscode/
+src_backup/
+data/*_backup.csv
+.env
+.env.*
+results/benchmarking/
+data/bank-full.csv
+*.zip

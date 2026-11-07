@@ -2,6 +2,7 @@
 Generates a synthetic 'messy' transactions dataset that mimics real-world
 data quality issues: missing values, duplicates, outliers, and drift.
 """
+from pathlib import Path
 import pandas as pd
 import numpy as np
 
@@ -54,9 +55,13 @@ df = pd.concat([df, dup_rows], ignore_index=True)
 # Shuffle rows so issues aren't neatly grouped
 df = df.sample(frac=1, random_state=7).reset_index(drop=True)
 
-df.to_csv("/home/claude/data-quality-engine/data/transactions.csv", index=False)
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_PATH = PROJECT_ROOT / "data" / "transactions.csv"
+DATA_PATH.parent.mkdir(parents=True, exist_ok=True)
+df.to_csv(DATA_PATH, index=False)
 print(f"Generated {len(df)} rows -> data/transactions.csv")
 print(df.head(10))
 print("\nMissing values per column:")
 print(df.isna().sum())
 print(f"\nDuplicate rows: {df.duplicated(subset=['customer_id','transaction_date','amount']).sum()}")
+
