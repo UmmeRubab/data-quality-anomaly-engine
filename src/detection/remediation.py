@@ -4,6 +4,7 @@ Takes detected data quality issues and generates human-readable,
 reviewable fix suggestions. Does NOT modify the data automatically —
 mirrors real data governance workflow: detect -> suggest -> human approves -> apply.
 """
+from pathlib import Path
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import IsolationForest
@@ -96,7 +97,7 @@ def build_remediation_report(path):
 
 if __name__ == "__main__":
     suggestions, summary = build_remediation_report(
-        "/home/claude/data-quality-engine/data/transactions.csv"
+        str(Path(__file__).resolve().parents[2] / "data" / "transactions.csv")
     )
 
     print("=" * 60)
@@ -111,3 +112,5 @@ if __name__ == "__main__":
         print(f"Txn #{s['transaction_id']} | {s['issue']}")
         print(f"   -> {s['suggested_fix']} [{s['confidence']} confidence]")
     print("=" * 60)
+
+

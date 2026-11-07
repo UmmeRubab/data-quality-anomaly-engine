@@ -3,6 +3,7 @@ Data Quality & Anomaly Detection Engine
 Detects: missing values, duplicates, and statistical outliers (Isolation Forest).
 Outputs a Data Health Score (0-100) and a detailed report.
 """
+from pathlib import Path
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import IsolationForest
@@ -69,7 +70,7 @@ def run_quality_check(path):
 
 
 if __name__ == "__main__":
-    report = run_quality_check("/home/claude/data-quality-engine/data/transactions.csv")
+    report = run_quality_check(str(Path(__file__).resolve().parents[2] / "data" / "transactions.csv"))
 
     print("=" * 55)
     print("DATA QUALITY SCORECARD")
@@ -86,3 +87,5 @@ if __name__ == "__main__":
     print("-" * 55)
     print(f"DATA HEALTH SCORE: {report['data_health_score']} / 100")
     print("=" * 55)
+
+
