@@ -29,7 +29,7 @@ SAMPLE_PATH = ROOT / "data" / "transactions.csv"
 
 st.set_page_config(
     page_title="DataGuard AI | Data Quality & ML Robustness",
-    page_icon="🛡️",
+    page_icon="🔍",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -127,8 +127,15 @@ def suggest_review_actions(df: pd.DataFrame, numeric_col: str, anomalies: pd.Dat
     return pd.DataFrame(actions, columns=["ID", "Issue", "Column", "Affected rows", "Suggestion", "Priority"])
 
 
-st.title("🛡️ DataGuard AI")
-st.caption("Data Quality & Anomaly Detection Engine · Evidence-aware checks · Human-in-the-loop remediation · ML robustness")
+st.title("🔍 DataGuard AI")
+st.markdown(
+    """
+    <p style="color: #FFFFFF !important; font-size: 14px;">
+        Data Quality &amp; Anomaly Detection Engine · Evidence-aware checks · Human-in-the-loop remediation · ML robustness
+    </p>
+    """,
+    unsafe_allow_html=True
+)
 st.info("Exploratory application, not a production validator. Use synthetic or non-sensitive datasets only. Uploaded files are processed in this app session; do not upload confidential data.")
 
 with st.sidebar:
