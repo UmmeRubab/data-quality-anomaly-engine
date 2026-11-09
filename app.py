@@ -131,7 +131,7 @@ st.title("🔍 DataGuard")
 st.markdown(
     """
     <p style="color: #FFFFFF !important; font-size: 14px;">
-        Data Quality &amp; Anomaly Detection Engine · Evidence-aware checks · Human-in-the-loop remediation · ML robustness
+        Data Quality &amp; Anomaly Detection Engine · Evidence-aware checks · ML robustness
     </p>
     """,
     unsafe_allow_html=True
@@ -320,7 +320,7 @@ with tab_ml:
 with tab_about:
     st.subheader("About DataGuard AI")
     st.markdown("""
-DataGuard AI demonstrates **data profiling**, **unsupervised anomaly screening**, **human-in-the-loop remediation review**, and **controlled ML sensitivity experiments** using Python.
+DataGuard demonstrates **data profiling**, **unsupervised anomaly screening**, and **controlled ML sensitivity experiments** using Python.
 
 - **Stack:** Streamlit, pandas, NumPy, scikit-learn, Isolation Forest.
 - **Data:** Synthetic transactions, user-uploaded CSVs, or the public UCI Bank Marketing dataset.
