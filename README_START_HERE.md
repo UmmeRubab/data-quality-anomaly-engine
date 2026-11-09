@@ -1,4 +1,4 @@
-# DataGuard AI — start here
+# DataGuard— start here
 
 ## One-click local startup (Windows)
 
