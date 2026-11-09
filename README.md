@@ -1,9 +1,9 @@
-# DataGuard AI
-### Data Quality, Anomaly Detection & ML Robustness Platform
+# DataGuard
+### Data Quality Analysis · Anomaly Detection · ML Robustness Evaluation
 
-**DataGuard AI** is a Python-based application for detecting data quality issues, identifying statistical anomalies, generating human-review-ready remediation suggestions, and evaluating how data corruption affects machine learning models.
+**DataGuard** is a Python-based application for detecting data quality issues, identifying statistical anomalies, generating human-review-ready remediation suggestions, and evaluating how data corruption affects machine learning models.
 
-The project evolved from a transaction-focused data quality engine into an interactive platform combining **data governance, anomaly detection, human-in-the-loop review, and machine learning robustness evaluation**.
+The project evolved from a transaction-focused data quality engine into an interactive platform combining **data governance, anomaly detection, and machine learning robustness evaluation**.
 
 **Live Streamlit Application:** https://dataguardd.streamlit.app/
 
