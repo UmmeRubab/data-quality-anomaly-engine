@@ -5,7 +5,7 @@
 
 The project evolved from a transaction-focused data quality engine into an interactive platform combining **data governance, anomaly detection, human-in-the-loop review, and machine learning robustness evaluation**.
 
-**Live Streamlit Application:** https://dataguardai.streamlit.app/
+**Live Streamlit Application:** https://dataguardd.streamlit.app/
 
 ## 1. Project Overview
 
