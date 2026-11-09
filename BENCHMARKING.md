@@ -1,4 +1,4 @@
-﻿# DataGuard AI â€” Phase 1: ML Robustness Benchmark
+﻿# DataGuard  â€” Phase 1: ML Robustness Benchmark
 
 ## Purpose
 Quantify how controlled training-label corruption changes downstream classification performance, using the same untouched holdout test set for each clean/noisy comparison.

@@ -1,4 +1,4 @@
-# DataGuard AI — Bank Marketing upgrade
+# DataGuard — Bank Marketing upgrade
 
 This package is a snapshot of the existing `feature/dataguard-research` project, extended with dataset profiling, CSV upload, and controlled classification experiments. The original synthetic label-noise endpoint and old benchmark scripts remain available.
 
