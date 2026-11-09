@@ -9,7 +9,7 @@ The project evolved from a transaction-focused data quality engine into an inter
 
 ## 1. Project Overview
 
-DataGuard AI addresses two connected challenges:
+DataGuard  addresses two connected challenges:
 
 1. **Data Quality and Governance:** Identifying missing values, duplicates, and statistical anomalies while supporting human-reviewed remediation decisions.
 2. **Machine Learning Reliability:** Evaluating how data quality problems, such as missing values, label noise, and numerical outliers, affect predictive model performance.
@@ -51,7 +51,7 @@ The upgraded Streamlit interface additionally supports recording review decision
 
 ### C. Machine Learning Robustness Evaluation
 
-DataGuard AI includes controlled experiments to investigate how corrupted training data affects predictive performance.
+DataGuard  includes controlled experiments to investigate how corrupted training data affects predictive performance.
 
 **Supported models:**
 - Logistic Regression
@@ -119,7 +119,7 @@ Some ML experiments require a suitable classification target and sufficient labe
 
 Automatically modifying financial or transactional records without review can introduce errors and compromise data integrity.
 
-DataGuard AI therefore emphasizes a human-in-the-loop approach.
+DataGuard  therefore emphasizes a human-in-the-loop approach.
 
 The original engine produces remediation recommendations with confidence levels, while the Streamlit dashboard allows users to review and record decisions.
 
@@ -143,7 +143,7 @@ This design demonstrates the importance of human oversight in data governance wo
 ## 6. System Architecture
 
 ```text
-                 DataGuard AI
+                 DataGuard 
                       |
             Dataset Input Layer
                       |
@@ -325,7 +325,7 @@ The earlier project architecture included a Next.js frontend and FastAPI backend
 
 ## 14. Project Evolution
 
-| Original implementation | Upgraded DataGuard AI |
+| Original implementation | Upgraded DataGuard  |
 |---|---|
 | Transaction-focused quality analysis | General structured CSV exploration |
 | Missing-value and duplicate detection | Extended column-level profiling |
@@ -340,7 +340,7 @@ The earlier project architecture included a Next.js frontend and FastAPI backend
 
 **Active — Streamlit Application Deployed**
 
-DataGuard AI demonstrates practical experience in:
+DataGuard  demonstrates practical experience in:
 
 - Data quality engineering
 - Data governance workflows
