@@ -127,7 +127,7 @@ def suggest_review_actions(df: pd.DataFrame, numeric_col: str, anomalies: pd.Dat
     return pd.DataFrame(actions, columns=["ID", "Issue", "Column", "Affected rows", "Suggestion", "Priority"])
 
 
-st.title("🔍 DataGuard AI")
+st.title("🔍 DataGuard")
 st.markdown(
     """
     <p style="color: #FFFFFF !important; font-size: 14px;">
